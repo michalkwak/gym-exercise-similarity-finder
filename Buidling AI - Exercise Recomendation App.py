@@ -95,18 +95,18 @@ exercise_names = list(exercises.keys())
 x_train = list(exercises.values())
 
 while True:
-    query = input("\nType in an exercise to find similar exercises. Type \"exit\" to quit. Type \"1\" for all available exercises. ").lower()
+    query = input("\nType in an exercise to find similar exercises. Type \"exit\" to quit. Type \"1\" for all available exercises.\n").lower()
 
     if query in ("exit"):
-        print("Goodbye!")
+        print("\nGoodbye!")
         break
 
     if query == "1":
-        print("Available:", ", ".join(exercise_names))
+        print("\nAvailable:", ", ".join(exercise_names))
         continue
 
     if query not in exercises:
-        print("Unknown exercise.")
+        print("\nUnknown exercise.")
         continue
     
 
@@ -122,3 +122,4 @@ while True:
         reasons = explain_similarity(x_test, exercises[name])
 
         print("  Similar because:", ", ".join(reasons))
+
