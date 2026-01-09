@@ -1,6 +1,4 @@
-# Project Title
-
-Gym Exercise Similarity Finder (Building AI)
+# Gym Exercise Similarity Finder (Building AI)
 
 ## Summary
 
